@@ -56,10 +56,29 @@ export class UsersViewModelService {
   public list() {
     if (!this.listado) {
       this.listado = [
-        { id: 1, nombre: 'Carmelo', apellidos: 'Coton', edad: 18 },
-        { id: 2, nombre: 'Pepito', apellidos: 'Grillo', edad: 155},
-        { id: 3, nombre: 'Pedro', apellidos: 'Pica Piedra', edad: 50},
-        { id: 4, nombre: 'Pablo', apellidos: 'Marmol', edad: 45}
+        {
+          id: 1,
+          name: 'Leanne Graham',
+          username: 'Bret',
+          email: 'Sincere@april.biz',
+          address: {
+            street: 'Kulas Light',
+            suite: 'Apt. 556',
+            city: 'Gwenborough',
+            zipcode: '92998-3874',
+            geo: {
+              lat: '-37.3159',
+              lng: '81.1496'
+            }
+          },
+          phone: '1-770-736-8031 x56442',
+          website: 'hildegard.org',
+          company: {
+            name: 'Romaguera-Crona',
+            catchPhrase: 'Multi-layered client-server neural-net',
+            bs: 'harness real-time e-markets'
+          }
+        }
       ];
     }
   }
